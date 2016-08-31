@@ -5,6 +5,7 @@ USER root
 RUN yum install https://www.softwarecollections.org/en/scls/remi/php56more/epel-7-x86_64/download/remi-php56more-epel-7-x86_64.noarch.rpm -y && \
     yum install -y --setopt=tsflags=nodocs reinstall glibc-common \
     more-php56-php-pecl-redis more-php56-php-mcrypt && \
+    yum install -y stunnel && \
     yum clean all -y
 
 # Getup bits
